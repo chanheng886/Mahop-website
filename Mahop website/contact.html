@@ -1,0 +1,119 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    <div class="contact-header">
+        <h2>contact us</h2>
+    </div>
+
+    <div class="contact-container">
+        <div class="contact-left">
+            <p class="our-location">our location</p>
+            <h2>where to find us</h2>
+            <p>Located in a cosy garden setting surrounded by trees, flowers and a lotus pond <br> away from the hustle and bustle of Pub Street, MAHOB is set in a traditional <br> wooden house just a few minutes from the centre of town, and five minutes <br> from Angkor Wat.</p>
+            <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d69710.85204567615!2d103.84355593791713!3d13.376248691200363!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3110170a2b986b99%3A0x7b8f6787e813c0d1!2zTWFob2IgQ3Vpc2luZSDhnpfhn4ThnofhnpPhnrjhnpnhnorhn5LhnovhnrbhnpPigIsg4Z6Y4Z-S4Z6g4Z684Z6U!5e0!3m2!1sen!2sus!4v1753285195295!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+        <div class="contact-right">
+            <div class="name-input">
+            <p>First</p><input class="first-name" type="text" height="50px">
+            <p>Last</p><input class="last-name" type="text">
+            </div>
+            <div class="email-input">
+                <p>Enter Email</p><input type="email"> 
+                <p>Comfirm Email</p><input type="email">
+            </div>
+            <div class="textarea">
+          <p class="comment">Drop your comments here</p>  <textarea rows="6 " cols="42" name="" id=""></textarea>
+          </div>
+          <button class="message">send a message</button>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img  src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+</body>
+</html>

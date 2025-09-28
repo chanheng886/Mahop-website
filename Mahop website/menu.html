@@ -1,0 +1,198 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kdam+Thmor+Pro&display=swap" rel="stylesheet">
+    <title>menu</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    <div class="our-menu">our menu</div>
+    <div class="menu-container">
+        <div class="menu-left">
+            <p class="menu-p1">VISIT OUR RESTAURANT</p>
+            <h2>MAHOP CUISINE MENU</h2>
+            <p class="menu-description">MAHOB strives to use unique and exceptional local ingredients to 
+create original Khmer cuisine. We offer a weekly degustation set 
+menu, as well as an à la carte menu including dishes cooked on 
+the hot stone,’ the ancient practice barbecue grilling on volcanic 
+stone heated to 400 degrees. For those keen to learn more about 
+Khmer cuisine and its history, we also offer a daily cooking class. 
+Please contact us for reservations.</p>
+<div class="menu-btn">
+            <button class="mahop-food-menu"><a href="foodmenu.html">mahop food menu</a></button>
+            <button class="mahop-drink-menu"><a href="drink.html">mahop drink menu</a></button>
+        </div>
+        </div>
+        <div class="menu-right">
+            <img width="250px" src="img(6).jpg" alt="">
+            <img width="250px" src="img(4).jpg" alt="">
+        </div>
+        
+    </div>
+    <h2 class="our-best-seller">our best seller</h2>
+    <div class="menu-container2">
+        <div class="menu-item">
+            <div class="menu-card">
+            <img width="250px" src="img(15).jpg" alt="">
+            <h2 class="card-menu-name">បាយក្តាំងបំពង</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="baykhdang.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(14).jpg" alt="">
+            <h2 class="card-menu-name">ត្រីចៀនជួន</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="treyjeanjoun.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(17).jpg" alt="">
+            <h2 class="card-menu-name">ឆាត្រប់</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="chhatrop.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(19).jpg" alt="">
+            <h2 class="card-menu-name">ឆាបង្គារម្រេចខ្ចី</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="chhabongkea.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+        </div>
+        <div class="menu-item">
+            <div class="menu-card">
+            <img width="250px" src="img(24).jpg" alt="">
+            <h2 class="card-menu-name">សម្លកកូរខ្ទិះ</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="somlorkoko.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(23).jpg" alt="">
+            <h2 class="card-menu-name">ភ្លាត្រីឆ្អើ</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="phleatrey.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(20).jpg" alt="">
+            <h2 class="card-menu-name">ឆាសាច់គោម្រេចខ្ចី</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="chhasachko.html">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+            <div class="menu-card">
+            <img width="250px" src="img(22).jpg" alt="">
+            <h2 class="card-menu-name">ប្រហុកខ្ទិះ</h2>
+            <p class="card-price">$10.00</p>
+            <div class="menu-card-btn">
+                <button class="order-now"><a href="bro">order now</a></button>
+                <button class="detail">details</button>
+            </div>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    <div class="about-header">
+        <h2>about us</h2>
+    </div>
+    <div class="about-container">
+        <div class="about-information">
+        <div class="about-left">
+            <h2 class="history">History</h2>
+            <p>Owner and Siem Reap restaurateur Sothea Seng was looking <br> 
+for a unique location for his new venture, and when he came <br> 
+across this traditional Khmer house just off Charles de Gaulle,<br> 
+he knew he had found the perfect spot. The elegant property <br> 
+formerly belonged to a governor of Angkor Thom’s Peak <br>
+Sneng district.</p>
+            <p>Beautifully decorated in the Khmer style, with original <br>
+features such as carved wooden roof details and blinds, the <br>
+house boasts an airy wooden upstairs section as well as a <br>
+contemporary ground floor area that has been transformed <br>
+into the main dining room, bar, and VIP air-conditioned <br>
+room. The house has been carefully restored in keeping with <br>
+all its original design features, including an attractive leaf <br>
+roof sourced from the Kulen Mountain area.</p>
+        </div>
+        <div class="about-right">
+            <img width="400px" src="img(1).jpg" alt="">
+        </div>
+        </div>
+        <div class="about-information2">
+        <div class="about-right"><img width="400px" src="img(10).jpg" alt=""></div>
+        <div class="about-left">
+            <h2 class="chef">chef</h2>
+            <p>A young and dynamic chef and also the restaurant’s owner,<br>
+Sothea has always had a passion for food. With over ten <br>
+years’ experience both locally and in luxury hotels in Dubai <br> 
+and the Caribbean, Sothea has gradually developed his unique <br>
+cooking style.</p>
+            <p>His culinary flair has led him to open some of Siem Reap’s top <br>
+restaurants, including Nest Angkor Café, Hot Stone Café, and <br>
+Palate Angkor. He also helped develop the Italian restaurant <br>
+Contro in Phnom Penh and was formerly the head chef at The <br>
+Plantation restaurant.</p>
+            <p>Sothea loves nothing more than to create original dishes,<br> 
+taking inspiration from organic produce and using the best <br>
+local suppliers to ensure you have an exceptional dining <br>
+experience every time.</p>
+        </div>
+        </div>
+    </div>
+    <div class="about-card">
+        <div class="card-item">
+            <div class="card-img">
+            <img width="390px" src="img(24).jpg" alt="">
+            <h2>somlor korko</h2>
+            </div>
+        </div>
+        <div class="card-item">
+            <div class="card-img">
+            <img width="390px" src="img(25).jpg" alt="">
+            <h2>sach ang</h2>
+            </div>
+            
+        </div>
+        <div class="card-item">
+            <div class="card-img">
+            <img width="390px" src="img(14).jpg" alt="">
+            <h2>trey jean joun</h2>
+            </div>   
+        </div>
+    </div>
+<div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+    
+</body>
+</html>

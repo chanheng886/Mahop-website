@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Kavoon&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+25&family=Kavoon&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@20..48,100..700,0..1,-50..200&icon_names=map_search" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,400,0,0&icon_names=phone_in_talk" />
+    <title>Mahop khmer website</title>
+    <style>
+.material-symbols-outlined {
+  font-variation-settings:
+  'FILL' 0,
+  'wght' 400,
+  'GRAD' 0,
+  'opsz' 24
+}
+</style>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+
+    <div class="header">
+        <div class="header-left">
+            <h1 class="name">A Culinary Journey <br> Through Cambodia’s <br> Heart</h1>
+            <p class="description">WHERE THE FLAVORS OF CAMBODIA COME ALIVE IN THE HEART OF SIEM REAP!</p>
+            <div class="header-btn">
+                <button class="drink-menu"><a href="drink.html">drinks menu</a></button>
+                <button class="food-menu"><a href="foodmenu.html">food menu</a></button>
+            </div>
+        </div>
+        <div class="header-right">
+            <img width="500px" src="amok trey 2.png" alt="">
+        </div>
+    </div>
+    <div class="card-container">
+        <div class="card-item">
+            <div class="card-1">
+            <div class="card-img1"><img width="300px" src="img(3).jpg" alt=""></div>
+            <button class="lunch">lunch</button>
+            </div>
+            <div class="card-1">
+            <div class="card-img2"><img width="300px" src="img(4).jpg" alt=""></div>
+            <button class="dinner">dinner</button>
+            </div>
+            <div class="card-1">
+            <div class="card-img1"><img width="300px" src="img(5).jpg" alt=""></div>
+            <button class="drink">drinks</button>
+            </div>
+            <div class="card-1">
+            <div class="card-img2"><img width="300px" src="img(6).jpg" alt=""></div>
+            <button class="disert">disert</button>
+            </div>
+        </div>
+    </div>
+    <div class="card-container2">
+        <div class="card-container2-name">
+        <h2>ORGANIC FARM-TO-TABLE EXPERIENCE</h2>
+        <p><a href="">discover more</a></p>
+        </div>
+        <div class="card-item">
+            <div class="card">
+                <div class="card-img"><img width="300px" src="img(7).jpg" alt=""></div>
+                <p class="card-name">Learn new skill</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img width="300px" src="img(8).jpg" alt=""></div>
+                <p class="card-name">culter immersion</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img width="300px" src="img(9).jpg" alt=""></div>
+                <p class="card-name">fun and enjoyable</p>
+            </div>
+            <div class="card">
+                <div class="card-img"><img width="300px" src="img(10).jpg" alt=""></div>
+                <p class="card-name">hands-on experince</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+</body>
+</html>

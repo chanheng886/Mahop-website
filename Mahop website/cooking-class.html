@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+     <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    <div class="header-cooking-class">
+        <h2 class="cooking-class">cooking class</h2>
+    </div>
+    <div class="cooking-container">
+        <div class="cooking-left">
+            <img width="500px" src="img(7).jpg" alt="">
+        </div>
+        <div class="cooking-right">
+            <p class="cooking1">from pan to plate</p>
+            <h2 class="cooking-name">techniues,traditions and tasty</h2>
+            <p>Our organic farm located just 3km northeastern side of the restaurant that <br>
+technically supported by Agrisud International Organisation which is <br>
+specialist on the agriculture development. The farm specialises in heirloom <br> 
+varietals of seasonal fruits and vegetable such as tomatoes, cucumber, <br>
+squash, spring bean, eggplant, local lettuce etc.</p>
+            <p>Fresh and flavourful ingredients lovingly cultivated without the use of <br>
+hormones, synthetic fertilisers, or pesticides to ensure daily supply to our <br>
+kitchen, We also provide cooking class to those who wish to explore and <br>
+learn about our cuisine and culture, while visiting the temple of Angkor <br>
+Wat.</p>
+            <p>Learn cooking Cambodian cuisine and culture with our enthusiasm <br>
+talented local chef team at our organic farm, enjoy picking your own fresh <br>
+ingredient from our soil ground on your Angkor Wat journey.</p>
+                <div class="cooking-btn">
+                    <button><a href="#">request a quote</a></button>
+                </div>
+        </div>
+    </div>
+     <div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1260 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/*Navigation bar and menu list**/
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px;
+    background-color: white;
+    padding: 10px 30px;
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-webkit-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+-moz-box-shadow: 0px 3px 5px 0px rgba(0,0,0,0.75);
+}
+nav ul{
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+}
+nav a{
+    text-decoration: none;
+    color: black;
+    font-family: sans-serif;
+}
+nav li{
+    list-style: none;
+}
+ul a:hover{
+    background-color: #212529;
+    padding: 10px 25px 10px 25px;
+    border-radius: 25px;
+    color: white;
+    font-weight: bold;
+    transition: all 0.2s ease;
+}
+@media (max-width:600px){
+    nav ul{
+        position: absolute;
+        top: 70px;
+        left: 0;
+        right: 0;
+        flex-direction: column;
+        text-align: center;
+        background-color: white;
+        gap: 0;
+        overflow: hidden;
+    }
+    nav ul li{
+        padding: 10px;
+        display: flex;
+        justify-content: flex-end;
+    }
+    .menu-icon{
+        display: block;
+    }
+    #menulist{
+        transition: all 0.2s;
+    }
+}
+
+
+
+.header {
+    max-width: 1600px;
+    margin: auto;
+    padding: 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #212529;
+}
+.name {
+    font-size: 3rem;
+  font-family: "Kavoon", serif;
+  font-weight: 400;
+  font-style: normal;
+  color: white;
+}
+.description {
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: white;
+}
+.header-btn {
+    margin-top: 20px;
+    display: flex;
+    gap: 15px;
+}
+.header-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+}
+.drink-menu,.food-menu {
+    background: transparent;
+    border: 2px solid white;
+    padding: 10px 30px 10px 30px;
+    transition: all 0.2s ease;
+}
+.drink-menu:hover {
+    transform: translateY(4px);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+.food-menu:hover {
+    transform: translateY(4px);
+    box-shadow: 0 0 10px 2px rgba(255, 255, 255, 0.5);
+}
+@media(max-width:600px){
+    .Drink-Menu{
+        display: block;
+        justify-content: center;
+        font-size: 0.9rem;
+    }
+}
+
+
+.card-container {
+    margin-top: 200px;
+    background-color: #E5E5E5;
+    padding: 100px;
+    max-width: 1600px;
+    margin: auto;
+}
+.card-item {
+    display: flex;
+    justify-content: center ;
+    gap: 20px;
+}
+.card-img2 {
+    margin-top: 20px;
+}
+.lunch,.dinner,.drink,.disert {
+    margin-left: 25%;
+    margin-top: 20px;
+    border: none;
+    border: 1px solid #737E45;
+    background: transparent;
+    padding: 10px 40px 10px 40px;
+    font-size: 1rem;
+    text-transform: uppercase;
+    color: #737E45;
+}
+
+
+
+
+
+.card-container2 h2{
+    display: flex;
+    justify-content: center;
+     font-family: "Jersey 25", sans-serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 2rem;
+  color: white;
+}
+.card-container2 p{
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    margin-bottom: 50px;
+}
+.card-container2 a{
+    color: #737E45;
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+.card-container2 p{
+    text-transform: uppercase;
+}
+.card-container2 {
+    background-color: #212529;
+    padding: 50px;
+    max-width: 1600px;
+    margin: auto;
+}
+.card-name {
+    color: white;
+    font-size: 1.3rem;
+    font-family: "Kavoon", serif;
+    display: flex;
+    justify-content: center;
+    text-transform: uppercase;
+    margin-top: 15px;
+}
+.card-img {
+    filter: brightness(50%);
+    transition: all 0.2s ease;
+}
+.card-img:hover{
+    transform: translateY(10px);
+    filter: brightness(100%);   
+}
+@media screen and (max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+    .header-right img{
+        width: 350px;
+        max-width: 1300px;
+        margin: auto;
+        display: block;
+        justify-items: center;
+        position: relative;
+        right: 20px;
+        top: 10px;
+    }
+    .card-container img{
+        width: 500px;
+        position: relative;
+        right: 75px;
+    }
+    .dinner,.drink,.disert,.lunch{
+        position: relative;
+        left: 20px;
+    }
+    .card-container2 img{
+        width: 500px;
+    }
+    .header {
+        display: block;
+        justify-content: center;
+    }
+    .card-item {
+        display: block;
+    }
+    .card-container2-name h2{
+        display: flex;
+        align-items: center;
+        font-size: 1.8rem;
+    }
+   
+    .card-item img{
+        display: block;
+        justify-content: center;
+        margin-top: 10px;
+    }
+    .card-img {
+        display: flex;
+        justify-content: center;
+    }
+    
+}
+
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    max-width: 1600px;
+    margin: auto;
+    padding: 100px;
+}
+.p1 {
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.stay-connected h2{
+    font-family: "Kavoon" serif;
+    text-transform: uppercase;
+    margin-top: 10px;
+}
+.p2 {
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+.subcribe {
+    margin-top: 20px;
+    border: none;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 0.8rem;
+    font-weight: bold;
+    padding: 10px 30px 10px 30px;
+    background-color: #212529;
+    color: white;
+    border-radius: 10px;
+}
+.contact-detail {
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.view-on-map {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.phone-call {
+    display: flex;
+    align-items: center;
+    margin-top: 20px;
+    gap: 10px;
+    display: flex;
+    justify-content: center;
+}
+.view-on-map a{
+    color: black;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+}
+.view-on-map {
+    margin-top: 20px;
+    display: flex;
+    justify-content: center;
+}
+.phone-call p{
+    font-family: sans-serif;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+.open-hours h2{
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.open-hours p{
+    margin-top: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+}
+.icon {
+    margin-top: 10px;
+    display: flex;
+    gap: 10px;
+}
+.img2 {
+    display: flex;
+    justify-content: center;
+}
+.footer3 {
+    margin-top: 25px;
+    text-transform: uppercase;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+}
+
+.footer4 p{
+    display: flex;
+    justify-content: center;
+    font-family: sans-serif;
+    font-size: 0.9rem;
+}
+.footer4 {
+    margin-top: 15px;
+    margin-bottom: 20px;
+}
+.about-header h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    text-transform: uppercase;
+}
+.about-header {
+    background-color: #212529;
+    padding: 150px;
+}
+.about-container {
+     background-color: #E5E5E5;
+    max-width: 1200px;
+    margin: auto;
+    padding: 90px;
+}
+.about-information {
+   
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+.about-left h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+}
+.about-left p{
+    margin-top: 50px;
+    font-family: sans-serif;
+}
+.about-information2 {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 100px;
+}
+.about-card {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    margin-top: 100px;
+}
+.card-img h2{
+    display: flex;
+    font-size: 1rem;
+    justify-content: center;
+    text-transform: uppercase;
+    color: black;
+}
+@media screen and (max-width:600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .about-container {
+        background-color: white;
+    }
+    .history {
+        display: flex;
+        justify-content: center;
+    }
+    .about-information {
+        display: block;
+        justify-content: center;
+    }
+    .about-information2 {
+        display: block;
+    }
+    .about-card {
+        display: block;
+    }
+    .about-right {
+        display: flex;
+        justify-content: flex-start;
+    }
+
+    .about-right img{
+        margin-top: 20px;
+    }
+    .card-img {
+        display: block;
+        justify-content: center;
+        margin-top: 20px;
+    }
+    .card-img img{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+        padding: 30px;
+    }
+    .card-img {
+        margin-top: 10px;
+    }
+    .card-img:hover {
+        transform: translateY(-10px);
+    }
+}
+
+
+
+.our-best-seller {
+    color: black;
+    max-width: 1600px;
+    margin: auto;
+}
+.our-menu {
+    background-color: #212529;
+    padding: 150px;
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+.menu-container {
+    display: flex;
+    align-items: center;
+    padding: 100px;
+    gap: 20px;
+}
+.menu-right {
+    display: flex;
+    gap: 10px;
+}
+.menu-left p{
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-p1 {
+    font-size: 0.8rem;
+    font-weight: bold;
+    color: #737E45;
+}
+.menu-left p{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.menu-left h2{
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 20px;
+}
+.menu-description {
+    display: flex;
+    justify-content: flex-end;
+}
+.menu-container {
+    max-width: 1300px;
+    margin: auto;
+}
+.menu-btn {
+    display: flex;
+    gap: ;
+}
+.menu-btn {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin-top: 50px;
+}
+.menu-btn button{
+    border:1px solid black;
+    padding: 10px 25px 10px 25px;
+    font-size: 0.8rem;
+    color: black;
+    text-transform: uppercase;
+    background: transparent;
+    transition: all 0.2s ease;
+} 
+.menu-btn a{
+    text-decoration: none;
+    color: black;
+}
+.mahop-food-menu:hover {
+    transform: translateY(4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+.mahop-drink-menu:hover{
+    transform: translateY(4px);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.menu-item {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    background-color: #212529;
+    max-width: 1600px;
+    margin: auto;
+    padding: 100px;
+}
+.menu-card {
+    background-color: #EDF2F4;
+    overflow: hidden;
+    height: 300px;
+    border-radius: 10px;
+}
+.card-menu-name,.card-price,.menu-card-btn {
+    display: flex;
+    justify-content: center;
+}
+.card-menu-name {
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 1.3rem;
+}
+.card-price {
+    margin-top: 10px;
+    font-family: sans-serif;
+}
+.menu-card-btn {
+    gap: 5px;
+    margin-top: 20px;
+}
+.menu-card-btn a{
+    color: white;
+    text-decoration: none;
+}
+.order-now {
+    font-family: sans-serif;
+    border: none;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    background-color: #212529;
+    color: white;
+    padding: 10px 15px 10px 15px;
+    border-radius: 10px;
+}
+.detail {
+    background-color: white;
+    border: 1px solid #212529;
+    border-radius: 10px;
+    padding: 5px 15px 5px 15px;
+    text-transform: uppercase;
+    font-size: 0.7rem;
+    font-weight: bold;
+    color: #212529;
+}
+.order-now {
+    transition: all 0.2s ease;
+}
+.order-now:hover{
+    transform: translateY(-5px);
+     box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: white;
+    color: black;
+}
+.order-now a:hover{
+    color: black;
+}
+.detail{
+    transition: all 0.2s ease;
+}
+.detail:hover {
+     transform: translateY(-5px);
+     box-shadow: 
+    0 2px 4px rgba(0, 0, 0, 0.1),
+    0 8px 16px rgba(0, 0, 0, 0.1);
+    background-color: black;
+    color: white;
+}
+.our-best-seller {
+    text-transform: uppercase;
+    margin-bottom: 10px;
+}
+
+
+@media screen and (max-width:600px){
+    *{
+    box-sizing: border-box;
+    
+}
+.our-best-seller {
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    margin-bottom: -100px;
+}
+
+.our-menu{
+    background-color: #737E45;
+}
+.menu-p1{
+    display: flex;
+    justify-content: flex-start;
+}
+.menu-container {
+    display: block;
+    max-width: 100%;
+    margin: auto;
+}
+.menu-right {
+    display: flex;
+    justify-content: center;
+    margin-top: 30px;
+}
+.menu-left p{
+    display: flex;
+    justify-content: center;
+}
+.menu-left h2{
+    display: flex;
+    justify-content: center;
+}
+.menu-description {
+    display: flex;
+    justify-content: center;
+}
+.menu-left img{
+    width: 500px;
+    height: auto;
+}
+.menu-item {
+    display: block;
+    justify-content: center;
+    background-color: white;
+}
+.menu-card {
+    margin-top: 20px;
+    height: 450px;
+    border-radius: 20px;
+}
+.menu-card img{
+    width: 100%;
+}
+.card-menu-name {
+    margin-top: 50px;
+}
+.footer {
+    display: block;
+    justify-content: flex-start;
+}
+.img2 {
+    display: flex;
+    justify-content: center;
+}
+.view-on-map {
+    display: flex;
+    justify-content: flex-start;
+}
+.phone-call {
+    display: flex;
+    justify-content: flex-start;
+}
+}
+.header-cooking-class h2{
+color: white;
+text-transform: uppercase;
+font-size: 1.5rem;
+background-color: #212529;
+padding: 150px;
+display: flex;
+justify-content: center
+;
+}
+
+
+.cooking-container {
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+    align-items: center;
+    padding: 100px;
+}
+.cooking1{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: #737E45;
+    margin-bottom: 20px;
+}
+.cooking-right h2{
+    text-transform: uppercase;
+    font-size: 2rem;
+    margin-bottom: 20px;
+}
+.cooking-right p{
+    margin-top: 25px;
+    font-family: sans-serif;
+}
+.cooking-btn button{
+    border: none;
+    margin-top: 30px;
+    padding: 20px 35px 20px 35px;
+    background-color: #737E45;
+}
+.cooking-btn a{
+    text-transform: uppercase;
+    text-decoration: none;
+    color: white;
+    font-weight: bold;
+    font-size: 0.9rem;
+}
+@media screen and (max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+    .cooking-container {
+        display: block;
+    }
+    .cooking-left img{
+        width: 500px;
+        display: flex;
+        justify-content: center;
+        position: relative;
+        right: 70px;
+    }
+    .cooking1{
+        display: flex;
+        justify-content: center;
+    }
+    .cooking-right h2{
+        font-size: 1.1rem;
+        display: flex;
+        justify-content: center;
+    }
+    .cooking-btn button{
+        display: flex;
+        justify-content: center;
+        position: relative;
+        left: 50px;
+    }
+
+}
+.disert-header {
+    background-color: #212529;
+    padding: 150px;
+}
+.disert-header h2{
+    color: white;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.disert-card-item {
+    display: flex;
+    margin-top: 30px;
+    gap: 10px;
+}
+.disert-card-item{
+    overflow: hidden;
+    width: 100%;
+    height: 400px;
+    max-width: 1400px;
+    margin: auto;
+    overflow-x: auto;
+    white-space: nowrap;
+    scroll-snap-type: mandatory;
+    scroll-snap-align: start;
+}
+.disert-item {
+    background-color: #212529;
+}
+.disert-card-item{
+    margin-top: 100px;
+}
+.card-description{
+     font-family: "Kdam Thmor Pro", sans-serif;
+}
+.card-description h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+}
+.card-description p{
+    display: flex;
+    justify-content: center;
+    color: white;
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.card-btn{
+    display: flex;
+    margin-top: 20px;   
+    justify-content: center;
+    gap: 20px;
+}
+.order ,.details{
+    border: none;
+    padding: 10px 25px 10px 25px;
+}
+.card-btn a{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.order a{
+color: black;
+}
+.order {
+    background-color: white;
+    border-radius: 5px;
+    font-weight: bold;
+    font-size: 0.7rem;
+}
+.details a{
+    color: white;
+font-weight: bold;
+font-size: 0.7rem;
+}
+.card-btn button{
+    transition: all 0.2s ease;
+}
+.card-btn button:hover{
+    transform: translateY(-10px);
+    box-shadow: 0px 4px 12px rgba(255, 255, 255, 0.6);
+
+}
+.details{
+    background-color: #212529;
+    border: 1px solid white;
+    border-radius: 5px;
+}
+@media screen and (max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+    .disert-card-item{
+        width: 500px;
+    }
+}
+
+.dis-header{
+    background-color: #212529;
+    padding: 130px;
+}
+.dis-header p{
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+}
+.dis-header h2{
+    color: white;
+    font-family: sans-serif;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: center;
+    font-size: 10rem;
+    margin-top: 20px;
+}
+
+.dis-card-list{
+    display: flex;
+    gap: 20px;
+    margin-top: 40px;
+    padding: 50px;
+}
+.dis-price {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    margin-top: 10px;
+}
+.dis-card-item h2{
+    font-family: "Kdam Thmor Pro", sans-serif;
+    font-size: 1rem;
+    margin-top: 10px;
+}
+@media screen and (max-width:600px){
+    *{
+        box-sizing: border-box;
+    }
+    .dis-header h2{
+        font-size: 3rem;
+    }
+    .dis-card-list {
+        display: block;
+        margin-top: 20px;
+    }
+    .dis-card-item img{
+        width: 100%;
+    }
+    .dis-card{
+        display: block;
+        justify-content: center;
+    }
+}
+.contact-header{
+    background-color: #212529;
+    padding: 150px;
+}
+.contact-header h2{
+    text-transform: uppercase;
+    display: flex;
+    justify-content: 
+    center;
+    font-size: 1.5rem;
+    color: white;
+}
+.contact-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 100px;
+    padding: 50px;
+}
+
+
+.name-input input{
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+}
+.name-input p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: 0.8rem;
+}
+.email-input input{
+    height: 40px;
+    width: 300px;
+    margin-top: 10px;
+}
+.email-input p{
+    margin-top: 20px;
+    font-family: sans-serif;
+    font-weight: bold;
+    color: gray;
+    font-size: 0.8rem;
+}
+
+.our-location{
+    font-family: sans-serif;
+    text-transform: uppercase;
+    font-size: 0.9rem;
+    font-weight: bold;
+    color: #737E45;
+}
+.contact-left h2{
+    font-size: 3rem;
+    text-transform: uppercase;
+    margin-top: 20px;
+}
+.contact-left p{
+    margin-top: 20px;
+    font-family: sans-serif;
+}
+.coment{
+    margin-top: 20px;
+}
+.textarea {
+    margin-top: 30px;
+    color: gray;
+    font-family: sans-serif;
+    font-size: 0.8rem;
+    font-weight: bold ;
+}
+textarea {
+    font-family: sans-serif;
+    margin-top: 10px;
+}
+.message {
+    margin-top: 30px;
+    border: none;
+    padding: 20px 25px 20px 25px;
+    color: white;
+    text-transform: uppercase;
+    background-color: #737E45;
+    font-weight: bold;
+}
+@media screen and (max-width:600px) {
+    *{
+        box-sizing: border-box;
+    }
+    .contact-container {
+        display: block;
+        justify-content: center;
+    }
+    .name-input input{
+        width: 450px;
+    }
+    .email-input input{
+        width: 450px;
+    }
+    textarea{
+        width: 450px;
+    }
+    .contact-left {
+        display: block;
+    }
+    iframe{
+        width: 500px;
+        margin-top: 20px;
+    }
+}
+#menulist {
+   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.5);
+      
+}
+
+/*pery piseth*/
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+.food-detail{
+    display: flex;
+    justify-content: center;
+    gap: 100px;
+}
+.baykdang{
+    font-family: "Dangrek", sans-serif;
+}
+.price,.size{
+    font-family: sans-serif;
+}
+label {
+    font-family: "Dangrek", sans-serif;
+}
+select{
+    font-family: "Dangrek", sans-serif;
+}
+option{
+    font-family: "Dangrek", sans-serif;
+}
+.food-detail {
+    padding: 150px;
+}
+.baykdang{
+  font-size: 4rem;
+}
+
+.size{
+  margin-top: 10px;
+}
+.Qty{
+    font-size: 20px;
+    margin-top: 0px;
+    margin-left: 0px;
+    margin-top: 10px;
+    display: flex;
+    text-transform: uppercase;
+    color: white;
+    background-color: black;
+    border: 2px solid white;
+    padding: 5px 130px 5px 20px ;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.order-buttons{
+    display: flex;
+    gap: 10px;
+}
+.order-buttons button:first-child{
+    background-color: black;
+    color: white;
+    padding: 10px 20px 10px 20px;
+    border: none;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.order-buttons button:nth-child(2) {
+    background-color: white;
+    border: 2px solid black;
+    padding: 10px 20px 10px 20px;
+    border-radius: 10px;
+    transition: all 0.2s ease;
+}
+.order-buttons a{
+    color: black;
+    text-decoration: none;
+}
+.order-buttons button:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.4);
+
+}
+
+option{
+    font-size: 1rem;
+     font-family: "Jersey 25", sans-serif;
+}
+
+form {
+    margin-top: 10px;
+}
+@media (max-width: 600px) {
+  .food-detail{
+    display: block;
+  }
+  .img-container img{
+    width: 400px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+    right: 105px;
+  }
+  .baykdang{
+    font-size: 2rem;
+  }
+  .menu-card-btn a:hover{
+    color: black;
+  }
+}
+  .detail-left{
+    margin-top: 0px;
+  }
+    .img-container{
+    padding: 15px;
+  }
+  .img-container img{
+    overflow: hidden;
+    border-radius: 20px;
+  }
+
+@media (max-width: 600px) {
+    .order-buttons {
+        margin-top: 20px;
+    }
+    iframe{
+        width: 450px;
+    }
+    .contact-left h2{
+        font-size: 2.9rem;
+    }
+}
+.Food-Menu {
+    margin-top: 100px;
+    display: flex;
+    gap: 200px;
+    font-size: 0.9rem;
+    font-family: sans-serif;
+    justify-content: center;
+}
+.menu-head {
+    background-color: #737E45;
+    padding: 200px;
+}
+.menu-head h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}
+.Food-Menu p{
+    margin-top: 10px;
+}
+.menu-food-btn {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+}
+.menu-food-btn a{
+    color: white;
+    text-decoration: none;
+}
+.menu-food-btn button{
+    margin-top: 20px;
+    padding: 10px 30px 10px 30px;
+    border: 2px solid white;
+    background-color: transparent;
+    color: white;
+    text-transform: uppercase;
+
+    transition: all 0.2s ease;
+}
+.menu-food-btn button:hover {
+    box-shadow: 0 4px 10px rgba(255, 255, 255, 0.5);
+    transform: translateY(10px);
+}
+.Drink-Menu p{
+    margin-top: 10px;
+}
+.Drink-Menu {
+    font-family: sans-serif;
+    display: flex;
+    justify-content: center;
+    gap: 300px;
+    margin-top: 100px;
+}
+@media(width:600px){
+    display: blo;
+}
+
+.menu-head2 {
+    background-color: #212529;
+    padding: 200px;
+    max-width: 1600px;
+    margin: auto;
+}
+.menu-head2 h2{
+    display: flex;
+    justify-content: center;
+    color: white;
+    text-transform: uppercase;
+    font-size: 2rem;
+}

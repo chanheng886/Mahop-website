@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Document</title>
+</head>
+<body>
+    <nav>
+        <div class="logo">
+            <img width="50px" src="Mahop khmer logo.png" alt="">
+        </div>
+        <ul id="menulist">
+            <li><a href="index.html">home</a></li>
+            <li><a href="about.html">about us</a></li>
+            <li><a href="menu.html">menu</a></li>
+            <li><a href="cooking-class.html">cooking class</a></li>
+            <li><a href="disert.html">disert</a></li>
+            <li><a href="discount.html">discount</a></li>
+            <li><a href="contact.html">contact us</a></li>
+        </ul>
+        <div class="menu-icon">
+            <img onclick="showmenu()" width="40px" src="menu.svg" alt="">
+        </div>
+    </nav>
+    <script>
+        let menulist = document.getElementById("menulist")
+        menulist.style.maxHeight = "0px";   
+
+        
+        function showmenu(){
+            if (menulist.style.maxHeight == "0px"){
+                menulist.style.maxHeight = "300px";
+            }
+            else {
+                menulist.style.maxHeight = "0px";
+            }
+        }
+    
+    </script>
+    <div class="menu-head">
+        <h2>mahop food menu</h2>
+        <div class="menu-food-btn">
+            <button><a href="foodmenu.html">food menu</a></button>
+            <button><a href="drink.html">drink menu</a></button>
+        </div>
+
+    </div>
+    
+    <div class="Food-Menu">
+        <div class="Food-Menu-right">
+            <h2>Appetizer</h2>
+                <p>F1: Homemade Prawn Cake</p>
+                <p>Pan-fried prawn mousses with lemongrass and turmertic paste, served with vegetable pickle</p>
+                <p>F2: Crispy Pork Belly</p>
+                <p>Local style roasted pork belly served with assortment of local herb crudites, spicy mayo, <br> and braised soya sauce</p>
+                <p>F3: Trio Satays</p>
+                <p>Free range chicken, Local beef and river prawn on lemongrass skewer, served with <br> peanut sauce and pickled vegetable.</p>
+                <p>F4: Prawn & Mango Roll</p>
+                <p>Prawns and mango rolled in homemade rice paper, served with ripe mango and corianer salsa.</p>
+                <p>F5: Broccoli Rabe</p>
+                <p>Stir fried broccoli with garlic and homemade oyster sauce.</p>
+                <p>F6: Rice Coated Frog Legs</p>
+                <p>Deep-fried frog legs coated with crispy rice served with chili-plum sauce.</p>
+                <p>F7: Lemongrass Chicken</p>
+                <p>Traditional wok-fried free-rank chicken with lemongrass and chili.</p>
+                <p>D8: Syrah Viognier, Yalumba, AUSTRALIA</p>
+                <p>D9: Malbec, Wild Rock, NEW ZEALAND</p>
+                <p>D10: Shiraz-Cabernet Mc William's, AUSTRALIA</p>
+                <p>D11: Shiraz, Stonefish Nero Old Vine 2016, Australia</p>
+            <h2>Salad</h2>
+                <p>F10 lemongras chicken salad</p>
+                <p>Warm salad of minced chicken with roasted rice powder, fresh mint, shallot, and chili-fish sauce</p>
+                <p>F11: Mekong fish cerviche</p>
+                <p>Snakehead fish salad with young pepper, bean sprout, and mixed herb, with lemongrass dressing</p>
+                <p>F12: Beef rib eye salad</p>
+                <p>Grilled Australian beef rib eye on bed of banna heart and red grape <br> salad, crispy shallot, and spicy mayo</p>
+                <p>F13: Tonle Sap Fondue</p>
+                <p>Prawns and mango rolled in homemade rice paper, served with ripe mango and corianer salsa.</p>
+                <p>F14: Mango salad</p>
+                <p>Local famous green mango salad with chili dressing served with pan-fried river prawn</p>
+            <h2>Soup</h2>
+                <p>F20 OUT OF POT SOUP</p>
+                <p>Greenmango, quailegg, pan-fried river prawns in duck egg and lime broth</p>
+                <p>F21: MORINGA FISH SOUP</p>
+                <p>Rural style fish soup with fresh Moringa leaf, <br> and mixed home grown vegetable, in white turmeric broth</p>
+                <p>F22: CHICKEN LEMON GRASS SOUP</p>
+                <p>Free-range chicken hot & sour soup with mushroom, onion, and lime juice in <br> lemon grass broth Vegetables</p>
+                <p>F30: WATER MORNING GLORY</p>
+                <p>Traditional stir-fried morning glory with hot <br> garlic and homemade oyster sauce</p>
+                <p>F31: CHAR-GRILLED AUBERGINE</p>
+                <p>Smoky char-grilled egg plant with homemade chili sauce and omelet</p>
+                <p>F32: PUMPKIN CURRY</p>
+                <P>Crunchy pumpkin coated with rice flakes, served on bed of home <br> made curry gravy, and eatable flower</P>
+            </div>
+            <div class="Food-Menu-left">
+            <h2>Rice Noodle</h2>
+                <p>F40: GARLIC FRIED RICE</p>
+                <p>Fried rice with crispy garlic and pan-fried egg</p>
+                <p>F41: CHICKEN FRIED RICE</p>
+                <p>Fried rice with chicken, cornkernel, green peas, and pan-fried egg</p>
+                <p>F42: PRAWN FRIED RICE</p>
+                <p>Fried rice with tiger prawns, corn kernel and pan-fried egg</p>
+                <p>BBQ</p>
+<p>"A type of Volcanic Stone, heated over 12 hours to temperatures exceeding 3000C. Your <br> chosen meator fishis served sizzling and you can cook to your <br> taste! A sellection of 3 local sauces will be served to <br> accompany your dish" And aside dish to choose from.</p>
+                <p>F50: GINGER CHICKEN</p>
+                <p>F51: LEMONGRASS BEEF</p>
+                <p>F52 AUSTRALIAN BEEF RIB EYE with choice of sidedishes</p>
+            <h2>Fish & Seafood</h2>
+                <p>F60: TAMARIND FISH</p>
+                <p>Wok-fried snakehead fish fillet with mixed vegetable and crispy shallot in tamarind gravy</p>
+                <p>F61: GINGER FROG</p>
+                <p>Stir-fried frog with crispy ginger and lotus seeds and scallion</p>
+                <p>F62: FISH AMOK</p>
+                <p>Traditional fish amok with Noni leaf in coconut and lemongrass broth</p>
+                <p>F63: SEAFOOD WITH GREEN PEPPERCORN</p>
+                <p>Wok-fried fresh seafood from Kampot rigion with young peppercor</p>
+            <h2>Meat & Poultry</h2>
+                <p>F70: CHICKEN & AUBERGINE</p>
+                <p>Roasted marinated chicken fillet served on bed of smoky char-grilled eggplant with braised soya bean</p>
+                <p>F71: BEEF LOC LAC</p>
+                <p>Stir-fried local beef tenderloin with tomato and crunchy black pepper emulsion, served with shiny cresson</p>
+                <p>F72: HONEY DUCK BREAST</p>
+                <p>Grilled duck breast with honey, served on bed of homemade vegetable in curry gravy</p>
+                <p>F73: BEEF WITH RED ANT</p>
+                <p>A must try local delicacy beef with organic tree red ant, lemongrass, and holy basil</p>
+                <p>F74: CAMBODIAN CHICKEN CURRY</p>
+                <p>Cambodian chicken curry with sweet potatoes, long bean, and mixed vegetable</p>
+                <p>F75: MAHOB SURF & TURF</p>
+                <p>Grilled marinated beef tenderloin and pan-fried snakehead fish fillet served on bed of <br> pumpkin croquette, crunchy watercress, and homemade <br> black pepper and tomato emulsion</p>
+                <p>F76 YOUNG PORK SPARE RIB IN PALM SUGAR</p>
+                <p>Slow braised young pork rib with cinnamon from Kampong Speu region palm sugar, served <br> with pan-fried egg and sautéed green vegetable Dessert</p>
+                <p>F80: DESSERT OF THE DAY</p>
+                <p>Innovative local dessert from daily fresh ingredient available by season</p>
+                <p>F81: PUMPKIN CUSTARD</p>
+                <p>Baked traditional pumpkin filled with coconut and palm sugar</p>
+                <p>F82: TRIO CRÈME BRULEE</p>
+                <p>Ginger, Coconut, and lemongrass crème Brulee with palm sugar</p>
+                <p>F83: WARM CHOCOLATE CAKE WITH LEMONGRASS ICE CREAM</p>
+                <p>F84: ICE CREAM PER SCOOP TREME White sesame, lemongrass, basil and lime, <br> coconut and chili, purple dragon fruit</p>
+            </div>
+    </div>
+    <div class="footer">
+        <div class="stay-connected">
+            <p class="p1">e-newsletter</p>
+            <h2>stay connected</h2>
+            <p class="p2">Sign up for our e-newsletter and be the first to receive updates on <br> upcoming events and exclusive offers.</p>
+            <button class="subcribe">subcribe</button>
+        </div>
+        <div class="contact-detail">
+            <h2>contact details</h2>
+            <div class="view-on-map">
+                <img src="location.svg" alt="">
+                <p><a href="">view on map</a></p>
+            </div>
+            <div class="phone-call">
+                <img src="call.svg" alt="">
+                <p>+85517376038</p>
+            </div>
+        </div>
+        <div class="open-hours">
+            <h2>open hours</h2>
+            <p>Lunch:11:30 AM - 2:30 PM</p>
+            <p>Dinner:5:30 PM - 10:00 PM</p>
+            <p>Open7 days a week</p>
+            <h2>follow us:</h2>
+            <div class="icon">
+                <a href="#"><img width="30px" src="tripadvisor.png" alt=""></a>
+                <a href="#"><img width="30px" src="yt.png" alt=""></a>
+                <a href="#"><img width="30px" src="facebook.png" alt=""></a>
+                <a href="#"><img width="30px" src="ig.png" alt=""></a>
+                <a href="#"><img width="30px" src="telegram.png" alt=""></a>
+                <a href="#"><img width="30px" src="tiktok.png" alt=""></a>
+            </div>
+        </div>
+    </div>
+    <div class="footer2">
+        <div class="img2">
+        <img width="150px" src="Mahop khmer logo.png" alt="">
+        </div>
+    </div>
+    <div class="footer3">
+        <div class="sister-properties">sister properties</div>
+        <div class="privicy-polic">privacy polic</div>
+        <div class="term and condition">term and conditon</div>
+    </div>
+    <div class="footer4">
+    <p>
+Copyright © 2015-2025 by Mahob Khmer Cuisine. All Rights Reserved.
+</p>
+    <p>Restaurant Website Designed by Angkor Design.</p>
+    </div>
+</body>
+</html>
